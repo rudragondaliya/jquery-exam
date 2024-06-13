@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+
+.loader{
+    height: 40px;
+    width: 40px;
+    border: 6px solid;
+    color: greenyellow;
+    border-radius: 50px;
+    border-top-color: transparent;
+    animation: loader 1s linear infinite
+    
+}
+
+@keyframes loader{
+    25%{
+        color: yellow;
+    }
+
+    50%{
+        color: red;
+    }
+
+    75%{
+        color: blue;
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
